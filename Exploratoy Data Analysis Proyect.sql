@@ -81,7 +81,7 @@ from layoffs_staging2
 group by company, year(`date`)
 Order by 2 desc;
 
--- Now let´s make a rank base of how many layoffs does each company had per year, I want this rank to only show the top 10 of each year
+-- Now let´s create a CTE, to make a rank base of how many layoffs does each company had per year, I want this rank to only show the top 10 of each year
 
 With Company_Year (Company, Years, Total_Laid_Off) AS
 (
